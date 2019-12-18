@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sync Complete</title>
+        <link href='https://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <script src="https://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+        <script src={{ url_for('static', filename='liquidFillGauge.js') }} language="JavaScript"></script>
+        <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+    </head>
+
+    <body>
+      <div id="baseContainer" class="animateBase">
+        <a href="/"><div id="logo"></div></a>
+        <div class="row">
+            <svg id="songCompat" width="100%" height="120" align="center"></svg>
+            <script language="JavaScript">
+
+            var compatPercent = {{score}};
+            var songsMatched = {{count}} + " Songs Matched!";
+
+            var config1 = liquidFillGaugeDefaultSettings();
+            config1.circleColor = "#000000";
+            config1.textColor = "#000000";
+            config1.waveTextColor = "#000000";
+            config1.waveColor = "#23cf5f";
+            config1.circleThickness = 0.1;
+            config1.textVertPosition = 0.5;
+            config1.waveAnimateTime = 1000;
+            var gauge1 = loadLiquidFillGauge("songCompat", compatPercent, config1);
+            </script>
+            <div id="compat"><p class="message fontsforweb_fontid_79748">Compatability</p></div>
+            <div id="matched"><p id="songsMatchedReport" class="message fontsforweb_fontid_79748"></p></div>
+            <script>
+                document.getElementById("songsMatchedReport").innerHTML = songsMatched;
+
+                const sleep = (milliseconds) => {
+                  return new Promise(resolve => setTimeout(resolve, milliseconds))
+                }
+                function next() {
+                  var svg = document.getElementById('songCompat');
+                  var text1 = document.getElementById('compat');
+                  var text2 = document.getElementById('matched');
+                  var btn1= document.getElementById('more');
+                  var btn2= document.getElementById('next');
+                  svg.style.opacity = '0';
+                  text1.style.opacity = '0';
+                  text2.style.opacity = '0';
+                  btn1.style.opacity = '0';
+                  btn2.style.opacity = '0';
+                  sleep(300).then(() => {
+                    base = document.getElementById('baseContainer')
+                    base.style.animationPlayState = 'paused';
+                    base.innerHTML = '<div class="baseContainer"><div id="logo"></div><a href={{ success_page }}><div class="optionBtn"><p class="fontsforweb_fontid_79748">Listen Now</p></div></a><a href="/"><div class="optionBtn"><p class="fontsforweb_fontid_79748">Start Over</p></div></a></div>'
+                  })
+                }
+                function next1() {
+                  var head = document.getElementById('head');
+                  var top = document.getElementById('top');
+                  var btn = document.getElementById('nextBtn');
+                  btn.style.opacity = '0';
+                  btn.style.transition = '0.3s';
+                  head.style.opacity = '0';
+                  head.style.transition = '0.3s';
+                  top.style.opacity = '0';
+                  top.style.transition = '0.3s'
+                  sleep(300).then(() => {
+                    base = document.getElementById('baseContainer')
+                    base.style.animationPlayState = 'paused';
+                    base.innerHTML = '<div class="baseContainer"><div id="logo"></div><a href={{ success_page }}><div class="optionBtn"><p class="fontsforweb_fontid_79748">Listen Now</p></div></a><a href="/"><div class="optionBtn"><p class="fontsforweb_fontid_79748">Start Over</p></div></a></div>'
+                  })
+                }
+                function moreInfo() {
+                  var svg = document.getElementById('songCompat');
+                  var text1 = document.getElementById('compat');
+                  var text2 = document.getElementById('matched');
+                  var btn1= document.getElementById('more');
+                  var btn2= document.getElementById('next');
+                  svg.style.opacity = '0';
+                  text1.style.opacity = '0';
+                  text2.style.opacity = '0';
+                  btn1.style.opacity = '0';
+                  btn2.style.opacity = '0';
+                  sleep(300).then(() => {
+                    base = document.getElementById('baseContainer')
+                    base.style.animationPlayState = 'paused';
+                    base.innerHTML = '<div class="baseContainer"><div id="logo"></div><h2 id="head" class="message fontsforweb_fontid_79748">Top Shared Artists</h2><div id="top" class="fontsforweb_fontid_79748">{% for artist in artists %}<p id="tnames" class="fontsforweb_fontid_79748r">{{artist[0]}} ({{artist[1]}})</p>{% endfor %}</div><div id="nextBtn" onclick="next1()" class="optionBtn"><p class="fontsforweb_fontid_79748">Next</p></div>'
+                  })
+                }
+            </script>
+        </div>
+
+        <div id="more" onclick="moreInfo()" class="optionBtn"><p class="fontsforweb_fontid_79748">More Info</p></div>
+        <div id="next" onclick="next()" class="optionBtn"><p class="fontsforweb_fontid_79748">Next</p></div>
+      </div>
+    </body>
+</html>

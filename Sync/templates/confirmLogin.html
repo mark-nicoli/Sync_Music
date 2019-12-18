@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sync</title>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">-->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </head>
+
+    <body>
+        <div id="baseContainer" class="animateBase">
+          <a href="/"><div id="logo"></div></a>
+          <div id="cirCon1" class="circleContainer">
+            <div id="circle1" class="circle"><lottie-player id="lp1" class="lplayer" src="https://assets10.lottiefiles.com/datafiles/OivQWebdu3tdxIt/data.json" stop loop.json background="transparent"  speed="1"  style="width: 100px; height: 100px;"></lottie-player></div>
+            <div id="name1" class="Username fontsforweb_fontid_79748">{{name1}}</div>
+            <p id="signed" class="Username fontsforweb_fontid_79748">signed in<p>
+          </div>
+          <div id="cirCon2" class="circleContainer">
+            <div id="circle2" class="circle"><lottie-player id="lp2" class="lplayer" src="https://assets10.lottiefiles.com/datafiles/OivQWebdu3tdxIt/data.json" stop loop.json background="transparent"  speed="1"  style="width: 100px; height: 100px;"></lottie-player></div>
+            <div id="name1" class="Username fontsforweb_fontid_79748">{{name2}}</div>
+            <p id="signed" class="Username fontsforweb_fontid_79748">signed in<p>
+          </div>
+          <!-- <a id="SyncNow" href="http://localhost:5000/options">--><div id="startBtn2" class="startSyncBtn" onclick="loadOptions()"><p class="fontsforweb_fontid_79748">Sync Now</p></div><!--</a> -->
+        </div>
+        <script type="text/javascript">
+          const sleep = (milliseconds) => {
+            return new Promise(resolve => setTimeout(resolve, milliseconds))
+          }
+          sleep(500).then(() => {
+            document.getElementById("lp1").play()
+            document.getElementById("lp2").play()
+          })
+          function loadOptions() {
+            const sleep = (milliseconds) => {
+              return new Promise(resolve => setTimeout(resolve, milliseconds))
+            }
+            container1 = document.getElementById('cirCon1').style
+            container2 = document.getElementById('cirCon2').style
+            btn = document.getElementById('startBtn2').style
+            container1.transition = '0.3s'
+            container1.opacity = '0'
+            container2.transition = '0.3s'
+            container2.opacity = '0'
+            btn.transition = '0.3s'
+            btn.opacity = '0'
+            sleep(300).then(() => {
+              base = document.getElementById('baseContainer')
+              base.style.animationPlayState = 'paused';
+              base.innerHTML = '<div class="baseContainer"><div id="logo"></div><a href="/loadingPlaylists?user=1"><div class="optionBtn"><p class="fontsforweb_fontid_79748">Choose Playlists to Use</p></div></a><a href="/songsSelected"><div class="optionBtn"><p class="fontsforweb_fontid_79748">Use Saved Songs Only</p></div></a></div>'
+            })
+          }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content={{ "1;url=" + url|string +"?user=" + user|string}} />
+	   <title>Sync</title>
+	   <link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
+     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body id="noMove">
+    <div id="baseContainer">
+      <a href="/"><div id="logo"></div></a>
+      <p class="message fontsforweb_fontid_79748">{{message}}</p>
+      <lottie-player
+        src="https://assets6.lottiefiles.com/datafiles/Hhw0wgYmETDTkxW/data.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop  autoplay >
+      </lottie-player>
+    </div>
+  </body>
+</html>

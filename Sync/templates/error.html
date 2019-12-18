@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sync</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href={{ url_for('static', filename='mark_styles.css') }}>
+    </head>
+
+    <body>
+        <img src={{ url_for('static', filename='home.jpg') }} class="bg">
+        <div class="overlay"></div>
+        <div class="container">
+        <br>
+        <p class="caption text-center"> {{message}}
+        </p>
+        <br>
+        <br>
+        <div class=options_buttons>
+            <form>
+                <div class="text-center">
+                    <a type="button" class="btn btn-success sync_btn" href="/">
+                        <div class="caption">Go Back to Start</div>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

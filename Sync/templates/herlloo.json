@@ -1,0 +1,390 @@
+{
+  'href': 'https://api.spotify.com/v1/users/j2z4brd8jlawh6tvdev4ywoqt/playlists?offset=0&limit=20',
+  'items': [
+    {
+      'collaborative': False,
+      'description': 'A daily selection of 200 chill beats perfect to help you relax &amp; study ',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM',
+      'id': '0vvXsWCC9xrXsKd4FyS8kM',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://pl.scdn.co/images/pl/default/902e1adb4722c5089c446bddb4a318e0784da964',
+          'width': None
+        }
+      ],
+      'name': 'lofi hip hop music - beats to relax/study to',
+      'owner': {
+        'display_name': 'chilledcow',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/chilledcow'
+        },
+        'href': 'https://api.spotify.com/v1/users/chilledcow',
+        'id': 'chilledcow',
+        'type': 'user',
+        'uri': 'spotify:user:chilledcow'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'MzY4LGIzODNlM2IxMDc1MzE0MTg5NDdlNjk5MzI4ZDczYzgzZjI5ZTU4YTI=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM/tracks',
+        'total': 208
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM'
+    },
+    {
+      'collaborative': False,
+      'description': 'Chill Out Songs and relaxing music. 🌞Including Deep House, Chill Music, Tropical Sounds and Electronic Music 😎– Electronica, Relaxing Songs, Chill Mix, Lounge Music, Beach Music, Cafe del mar, Buddha Bar, Hotel Costes, Nikki Beach. Follow us on <a href="https://wad.lnk.to/instagram">Instagram</a>!',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/7ozIozDp260fjNOZy1yzRG'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/7ozIozDp260fjNOZy1yzRG',
+      'id': '7ozIozDp260fjNOZy1yzRG',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://pl.scdn.co/images/pl/default/7322e5bf220f9bddea5bfc520bc3dbf76d4e1856',
+          'width': None
+        }
+      ],
+      'name': 'Chillout 2019',
+      'owner': {
+        'display_name': 'We Are Diamond',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/wearediamond'
+        },
+        'href': 'https://api.spotify.com/v1/users/wearediamond',
+        'id': 'wearediamond',
+        'type': 'user',
+        'uri': 'spotify:user:wearediamond'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'Njc0LDdmYTFmYWEzM2U0MDc3MmQ1ZmJiYjU0ODU4MWY4Y2FmYzczYmZkNTQ=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/7ozIozDp260fjNOZy1yzRG/tracks',
+        'total': 174
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:7ozIozDp260fjNOZy1yzRG'
+    },
+    {
+      'collaborative': False,
+      'description': 'The songs you can’t get enough of right now.',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1Epg5D2hkdjUY6'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1Epg5D2hkdjUY6',
+      'id': '37i9dQZF1Epg5D2hkdjUY6',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://daily-mix.scdn.co/covers/on_repeat/PZN_On_Repeat_DEFAULT-en.jpg',
+          'width': None
+        }
+      ],
+      'name': 'On Repeat',
+      'owner': {
+        'display_name': 'Spotify',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/spotify'
+        },
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'id': 'spotify',
+        'type': 'user',
+        'uri': 'spotify:user:spotify'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'MTU3NjEyMDI0OSwwMDAwMDAwMDEwZDBjOTYzZWY5MjY0MjAyNWU1NDAyNzFkZmU0YzAx',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1Epg5D2hkdjUY6/tracks',
+        'total': 30
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:37i9dQZF1Epg5D2hkdjUY6'
+    },
+    {
+      'collaborative': False,
+      'description': '',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/2hzHwSg8Bq8mXqYAJSq6yL'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/2hzHwSg8Bq8mXqYAJSq6yL',
+      'id': '2hzHwSg8Bq8mXqYAJSq6yL',
+      'images': [
+        {
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/8765382d7dba7be8a31534f41a6c29210874e6adab67616d0000b27317ee64e0de457686c3c247cdab67616d0000b2734060b73cf684803a6b592facab67616d0000b273d514a650448ca9558a3adba2',
+          'width': 640
+        },
+        {
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/8765382d7dba7be8a31534f41a6c29210874e6adab67616d0000b27317ee64e0de457686c3c247cdab67616d0000b2734060b73cf684803a6b592facab67616d0000b273d514a650448ca9558a3adba2',
+          'width': 300
+        },
+        {
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/8765382d7dba7be8a31534f41a6c29210874e6adab67616d0000b27317ee64e0de457686c3c247cdab67616d0000b2734060b73cf684803a6b592facab67616d0000b273d514a650448ca9558a3adba2',
+          'width': 60
+        }
+      ],
+      'name': '2',
+      'owner': {
+        'display_name': 'MarkNicoli',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/j2z4brd8jlawh6tvdev4ywoqt'
+        },
+        'href': 'https://api.spotify.com/v1/users/j2z4brd8jlawh6tvdev4ywoqt',
+        'id': 'j2z4brd8jlawh6tvdev4ywoqt',
+        'type': 'user',
+        'uri': 'spotify:user:j2z4brd8jlawh6tvdev4ywoqt'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NDMsMDRjZjZiNGNmNTcwMmUxNzg1Y2Q1NjFhNTk0NTlhMDZiMGI0MmVhNw==',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/2hzHwSg8Bq8mXqYAJSq6yL/tracks',
+        'total': 20
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:2hzHwSg8Bq8mXqYAJSq6yL'
+    },
+    {
+      'collaborative': False,
+      'description': '',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/4A5C43HCQeB3bRnZ0brLnW'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/4A5C43HCQeB3bRnZ0brLnW',
+      'id': '4A5C43HCQeB3bRnZ0brLnW',
+      'images': [
+        {
+          'height': 640,
+          'url': 'https://i.scdn.co/image/ab67616d0000b27361fe6d3a50c0beaa3cfe33e9',
+          'width': 640
+        }
+      ],
+      'name': 'My Shazam Tracks',
+      'owner': {
+        'display_name': 'MarkNicoli',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/j2z4brd8jlawh6tvdev4ywoqt'
+        },
+        'href': 'https://api.spotify.com/v1/users/j2z4brd8jlawh6tvdev4ywoqt',
+        'id': 'j2z4brd8jlawh6tvdev4ywoqt',
+        'type': 'user',
+        'uri': 'spotify:user:j2z4brd8jlawh6tvdev4ywoqt'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'NCwzNmYzNzc4ZDAwMWE2M2U5MjhkYzdlMzM1OTljODNhMGZkMDZkMTQy',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/4A5C43HCQeB3bRnZ0brLnW/tracks',
+        'total': 3
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:4A5C43HCQeB3bRnZ0brLnW'
+    },
+    {
+      'collaborative': False,
+      'description': 'Your daily update of the most played tracks right now.',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF',
+      'id': '37i9dQZEVXbMDoHDwVN2tF',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://charts-images.scdn.co/REGIONAL_GLOBAL_DEFAULT.jpg',
+          'width': None
+        }
+      ],
+      'name': 'Global Top 50',
+      'owner': {
+        'display_name': 'spotifycharts',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/spotifycharts'
+        },
+        'href': 'https://api.spotify.com/v1/users/spotifycharts',
+        'id': 'spotifycharts',
+        'type': 'user',
+        'uri': 'spotify:user:spotifycharts'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'NjI5NzI3NzQxLDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDY1NmU=',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/37i9dQZEVXbMDoHDwVN2tF/tracks',
+        'total': 50
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:37i9dQZEVXbMDoHDwVN2tF'
+    },
+    {
+      'collaborative': False,
+      'description': 'When everything is lonely, I can be my best friend.',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1DWX83CujKHHOn'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1DWX83CujKHHOn',
+      'id': '37i9dQZF1DWX83CujKHHOn',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67706f0000000265af49474d91827160b56b27',
+          'width': None
+        }
+      ],
+      'name': 'Alone Again',
+      'owner': {
+        'display_name': 'Spotify',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/spotify'
+        },
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'id': 'spotify',
+        'type': 'user',
+        'uri': 'spotify:user:spotify'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'MTU3NjQ5NTUzNCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1DWX83CujKHHOn/tracks',
+        'total': 50
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:37i9dQZF1DWX83CujKHHOn'
+    },
+    {
+      'collaborative': False,
+      'description': "The UK's biggest playlist. Cover: Camila Cabello",
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZF1DWY4lFlS4Pnso'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1DWY4lFlS4Pnso',
+      'id': '37i9dQZF1DWY4lFlS4Pnso',
+      'images': [
+        {
+          'height': None,
+          'url': 'https://i.scdn.co/image/ab67706f000000022692a555071c9e14af4983df',
+          'width': None
+        }
+      ],
+      'name': 'Hot Hits UK',
+      'owner': {
+        'display_name': 'Spotify',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/spotify'
+        },
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'id': 'spotify',
+        'type': 'user',
+        'uri': 'spotify:user:spotify'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'MTU3NjE5NTI2MCwwMDAwMDIzYzAwMDAwMTZlZmM4ZWZlYjYwMDAwMDE2ZWZhMGEzYzcz',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/37i9dQZF1DWY4lFlS4Pnso/tracks',
+        'total': 71
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:37i9dQZF1DWY4lFlS4Pnso'
+    },
+    {
+      'collaborative': False,
+      'description': 'Your weekly mixtape of fresh music. Enjoy new discoveries and deep cuts chosen just for you. Updated every Monday, so save your favorites!',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/37i9dQZEVXcHzGJUcZLmgB'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/37i9dQZEVXcHzGJUcZLmgB',
+      'id': '37i9dQZEVXcHzGJUcZLmgB',
+      'images': [
+        {
+          'height': 300,
+          'url': 'https://i.scdn.co/image/227fbeb9d27a232ab4808b1a555f090b1cd8152b',
+          'width': 300
+        }
+      ],
+      'name': 'Discover Weekly',
+      'owner': {
+        'display_name': 'Spotify',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/spotify'
+        },
+        'href': 'https://api.spotify.com/v1/users/spotify',
+        'id': 'spotify',
+        'type': 'user',
+        'uri': 'spotify:user:spotify'
+      },
+      'primary_color': None,
+      'public': False,
+      'snapshot_id': 'MjYyNzQyNDAsMDAwMDAwMDBiZWQxMzhiYmVjMzBiNDYwMmM3NGQ5ZGQwNDIwOTQ2Nw==',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/37i9dQZEVXcHzGJUcZLmgB/tracks',
+        'total': 30
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:37i9dQZEVXcHzGJUcZLmgB'
+    },
+    {
+      'collaborative': False,
+      'description': '',
+      'external_urls': {
+        'spotify': 'https://open.spotify.com/playlist/4Ci0BksNyfx4bCtCQ4D0Iv'
+      },
+      'href': 'https://api.spotify.com/v1/playlists/4Ci0BksNyfx4bCtCQ4D0Iv',
+      'id': '4Ci0BksNyfx4bCtCQ4D0Iv',
+      'images': [
+        {
+          'height': 640,
+          'url': 'https://mosaic.scdn.co/640/442eb78fb86eab0ec162ec5ea33405b19c61898c94105e271865c28853bfb7b44b38353a2fea45d6de625b781c9b6b02c078d0d122257d26ea62f469f68c8e15dfe7338113ba062a493f87a7da648ac4',
+          'width': 640
+        },
+        {
+          'height': 300,
+          'url': 'https://mosaic.scdn.co/300/442eb78fb86eab0ec162ec5ea33405b19c61898c94105e271865c28853bfb7b44b38353a2fea45d6de625b781c9b6b02c078d0d122257d26ea62f469f68c8e15dfe7338113ba062a493f87a7da648ac4',
+          'width': 300
+        },
+        {
+          'height': 60,
+          'url': 'https://mosaic.scdn.co/60/442eb78fb86eab0ec162ec5ea33405b19c61898c94105e271865c28853bfb7b44b38353a2fea45d6de625b781c9b6b02c078d0d122257d26ea62f469f68c8e15dfe7338113ba062a493f87a7da648ac4',
+          'width': 60
+        }
+      ],
+      'name': '1',
+      'owner': {
+        'display_name': 'MarkNicoli',
+        'external_urls': {
+          'spotify': 'https://open.spotify.com/user/j2z4brd8jlawh6tvdev4ywoqt'
+        },
+        'href': 'https://api.spotify.com/v1/users/j2z4brd8jlawh6tvdev4ywoqt',
+        'id': 'j2z4brd8jlawh6tvdev4ywoqt',
+        'type': 'user',
+        'uri': 'spotify:user:j2z4brd8jlawh6tvdev4ywoqt'
+      },
+      'primary_color': None,
+      'public': True,
+      'snapshot_id': 'MzQsNDJmYjZiN2EyOTk1NjRhMWE1NDk4NzUzMjBkZTEzOGQ4OGRkMmVkMQ==',
+      'tracks': {
+        'href': 'https://api.spotify.com/v1/playlists/4Ci0BksNyfx4bCtCQ4D0Iv/tracks',
+        'total': 25
+      },
+      'type': 'playlist',
+      'uri': 'spotify:playlist:4Ci0BksNyfx4bCtCQ4D0Iv'
+    }
+  ],
+  'limit': 20,
+  'next': None,
+  'offset': 0,
+  'previous': None,
+  'total': 10
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Together - Sync</title>
+	<link rel="stylesheet" href={{ url_for('static', filename= 'styles.css') }}>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body id="body" onclick="resetStart()">
+	<div id="baseContainer" class="animateBase">
+		<a href="/"><div id="logo"></div></a>
+		<p id="oneliner" class="fontsforweb_fontid_79748">Make the perfect Spotify playlist for you and a friend</p>
+		<div id="dynamicStart" class="defaultStartBtn" onclick="login()"><p id="start" class="fontsforweb_fontid_79748">Start</p></div>
+	</div>
+	<script>
+		function resetStart() {
+			container = document.getElementById("dynamicStart")
+			if (event.target.id == 'oneliner' || event.target.id == 'body' || event.target.id == 'logo' || event.target.id == 'baseContainer') {
+				container.classList.replace("activeStartBtn","defaultStartBtn")
+				container.innerHTML= '<p id="start" class="fontsforweb_fontid_79748">Start</p>'
+				document.getElementById('oneliner').style.marginTop = '35px'
+			}
+		}
+		function login() {
+			container = document.getElementById("dynamicStart")
+			container.classList.replace("defaultStartBtn", "activeStartBtn")
+			container.innerHTML= '<lottie-player id="lottie" src="https://assets8.lottiefiles.com/datafiles/XdTBD1jKm9zeIJ5/data.json" stop loop.json" background="transparent"  speed="1"  style="width: 120px; height: 120px;"  loop  autoplay ></lottie-player><a href={{auth_url}}><div id="spotifyRedirect"><p class="fontsforweb_fontid_79748">LOGIN TO SPOTIFY</p></div></a>'
+			document.getElementById('oneliner').style.marginTop = '15px'
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,628 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to right top, #1ff2fb, #28dbf3, #3dc4e6, #4fadd4, #5b97be, #568cb9, #5580b3, #5674ac, #556db6, #5b65bd, #685ac1, #7a4cc2);
+  background-size: 300%;
+  background-position: center;
+  animation: bg-animation 10s infinite alternate;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+#signed {
+  margin-top: 0px;
+  font-style: italic;
+  font-size: 12px;
+}
+#noMove {
+  animation: bg-animation 1000s infinite alternate;
+}
+#baseContainer {
+  user-select: none;
+  text-align: center;
+  background-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+}
+#baseContainer:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.2);
+}
+.animateBase {
+  animation: Start 0.5s;
+}
+.defaultStartBtn {
+  animation: pulse 2s infinite;
+  cursor: pointer;
+  width: 100px;
+  height: 55px;
+  margin-top: 70px;
+  background: #23cf5f;
+  color: black;
+}
+.defaultStartBtn:hover {
+  width: 210px;
+}
+.activeStartBtn {
+  cursor: default;
+  width: 300px;
+  height: 160px;
+  margin-top: 40px;
+  background: black;
+  color: #23cf5f;
+}
+#logo {
+  background: url("IconGS.png") no-repeat;
+  background-position: center;
+  background-size: 260px, cover;
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  height: 150px;
+}
+#oneliner {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  width: 16em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  transition: 0.5s;
+}
+
+#dynamicStart {
+  border-color: black;
+  line-height: 0;
+  border-style: solid;
+  border-width: thick;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 28px;
+  transition: 0.3s;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,0.3);
+}
+#dynamicStart:hover {
+  background: black;
+  color: #23cf5f;
+  cursor: pointer;
+}
+
+#spotifyLogo {
+  background: url("spotifyTransparent.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60px 60px ;
+  margin-top: 10px;
+  width: 100%;
+  height: 60px;
+}
+#spotifyRedirect{
+  margin-top: 30px;
+  display: inline-block;
+  width: 270px;
+  height: 40px;
+  background-color: #23cf5f;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: -10px;
+  animation: Start 1s;
+  transition: 0.3s;
+}
+#spotifyRedirect:hover {
+  transform: scale(0.95);
+}
+
+@keyframes Move {
+  0% {margin-left: 130px;}
+  100% {margin-left: 30px;}
+}
+@keyframes Hide {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes Hide1 {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 0.5;}
+}
+@keyframes Start {
+  0% {top: 70%;opacity: 0.0;}
+  100% {top: 50%;opacity: 1.0;}
+}
+@keyframes floatIn {
+  0% {margin-top: 150px;opacity: 0.0;}
+  12% {opacity: 0.0;}
+  100% {margin-top: 50px;opacity: 1.0;}
+}
+@keyframes floatIn1 {
+  0% {margin-top: 100px;opacity: 0.0;}
+  12% {opacity: 0.0;}
+  100% {margin-top: 20px;opacity: 1.0;}
+}
+@keyframes bg-animation {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+@font-face {
+	font-family: 'CircularStdBold';
+	src: url('./CircularStdBold.eot');
+	src: local('CircularStdBold'), url('./CircularStdBold.woff') format('woff'), url('./CircularStdBold.ttf') format('truetype');
+}
+#top {
+  margin-top: 10px;
+}
+#head {
+  margin-top: -15px;
+}
+#tnames {
+  margin-top: 0px;
+}
+#nextBtn {
+  margin-top: 20px;
+  animation: floatIn1 0.7s;
+}
+#cirCon1 {
+  animation: Move 1.5s;
+  margin-left: 30px;
+  float: left;
+}
+#cirCon2 {
+  animation: Hide .8s;
+}
+#logo-bm {
+  margin-top: 60px;
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+#logo-bm1 {
+  margin-top: 60px;
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+#logo-bm2 {
+  margin-top: 60px;
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+#name2 {
+  line-height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  width: 165px;
+  height: 40px;
+  background-color: #23cf5f;
+  margin-top: 20px;
+  color: black;
+  transition: 0.3s;
+}
+#name2:hover {
+  background-color: black;
+  color: #23cf5f;
+  transform: scale(0.95);
+}
+#startBtn1 {
+  background-color: grey;
+  opacity: 0.5;
+  animation: Hide1 1.5s;
+}
+#startBtn2 {
+  background-color:  #23cf5f;
+  animation: Hide 1.5s;
+}
+#startBtn2:hover {
+  background-color: black;
+  color: #23cf5f;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+#SyncNow {
+  color: black;
+}
+#submit {
+  border: 0px;
+  font-size: 22px;
+  background-color: #23cf5f;
+  margin-top: 120px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+#submit:hover {
+  background-color: black;
+  color: #23cf5f;
+}
+#compat {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+#matched {
+  transition: 0.3s;
+}
+#songsMatchedReport {
+  margin-top: -20px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+#songCompat {
+  transition: 0.3s;
+  margin-top: -10px;
+}
+#more {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+  animation: pulse 0s;
+}
+#next {
+  width: 150px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+  animation: pulse 0s;
+}
+#play {
+  margin-top: 30px;
+}
+#webplayer {
+  background-color: white;
+  height: 346px;
+  border-radius: 25px;
+}
+#list {
+  transition: 1s;
+}
+#player {
+  border-radius: 25px;
+  animation: Hide 1s;
+}
+#lottie {
+  margin-top: -10px;
+}
+.lplayer {
+  margin-top: 60px;
+}
+.message {
+  display: inline-block;
+  max-width: 350px;
+  font-size: 26px;
+}
+.startSyncBtn {
+  font-size: 20px;
+  line-height: 16px;
+  margin-top: 40px;
+  display: inline-block;
+  height: 55px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: grey;
+  transition: 0.3s;
+}
+.optionBtn {
+  font-size: 20px;
+  display: inline-block;
+  line-height: 23px;
+  background-color: #23cf5f;
+  width: 300px;
+  height: 60px;
+  margin-top: 50px;
+  border-radius: 30px;
+  transition: 0.3s;
+  animation: floatIn 0.7s;
+}
+.optionBtn:hover {
+  background-color: black;
+  color: #23cf5f;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+.Username {
+  margin-top: -1px;
+  animation: Hide 1.5s;
+}
+.circleContainer {
+  margin-top: 10px;
+  display: inline-block;
+  width: 160px;
+  height: 200px;
+}
+.circle {
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-width: thick;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  background: url('ProfilePic.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 130px;
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_79748">Text with this font applied</p> */
+.fontsforweb_fontid_79748 {
+	font-family: 'CircularStdBold' !important;
+}
+
+/* ///  DECORATION CSS ///  */
+.cont_select_center {
+ position: absolute;
+ display: inline-block;
+ transform: translateX(-50%);
+ width: 200px;
+ margin-top: 5px;
+}
+
+.cont_heg_50 {
+ position: absolute;
+ height: 50%;
+ left: 0;
+ top: 0;
+ width: 100%;
+background-color: #fd7b52;
+}
+/* ///  END DECORATION CSS  ///  */
+
+.icon_select_mate {
+ position: absolute;
+ top: 45px;
+ left: 45%;
+ font-size: 16px;
+ transition: 275ms;
+ cursor: pointer;
+}
+
+.select_mate {
+  font-size: 18px;
+ position: relative;
+ width: 200px;
+ min-height: 60px;
+ font-family: 'Roboto';
+ color: #777;
+ font-weight: 300;
+ background-color: #fff;
+ transition: 0.3s;
+ border-radius: 30px;
+
+}/* Oculto el elemento select */
+.select_mate:hover {
+  box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+select {
+ position: absolute;
+ overflow: hidden;
+ height: 0px;
+ opacity: 0;
+ z-index: -1;
+}
+
+.cont_list_select_mate {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.cont_select_int {
+position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 999;
+  overflow-x: hidden;
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  border-radius: 15px;
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+.cont_select_int::-webkit-scrollbar {
+  display: none;
+}
+.maxHeight {
+  max-height: 200px;
+}
+.disappear {
+  display: none;
+}
+
+li {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-bottom:1px solid #E0E0E0;
+  background-color: #F5F5F5;
+  list-style-type: none;
+  padding: 10px 2%;
+  margin: 0px;
+
+  display: block;
+  cursor:pointer;
+}
+li:last-child {
+  border-radius: 3px;
+  border-bottom:0px;
+}
+li:hover {
+ background-color: lightgrey;
+}
+
+.active {
+  background-color: lightgrey;
+}
+
+/* etiqueta <p> con la opcion selecionada  */
+.selecionado_opcion {
+  margin-left: -2px;
+  padding: 10px 2%;
+  width: 200px;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+
+
+
+
+/*Marks Stuff*/
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+}
+.title {
+    font-family: "Merienda One", sans-serif;
+    color: white;
+}
+.bg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index: -1;
+}
+.caption {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+.center {
+    display: block;
+    margin: 0 auto;
+}
+.sync_btn {
+    border-radius: 24px;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Merienda One", sans-serif;
+
+}
+.liquidFillGaugeText {
+    font-family: Helvetica; font-weight: bold;
+    margin-top: 0%;
+}
+.caption {
+    font-size: 25px;
+}
+.artist {
+    color: white;
+}
+
+.title {
+    font-size: 100px;
+}
+.caption {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: "Merienda One", sans-serif;
+}
+.liquidFillGaugeText {
+    font-family: Helvetica; font-weight: bold;
+    margin-top: 0%;
+}
+.caption {
+    font-size: 25px;
+}
+.button_text {
+    font-size: 20px;
+}
+.artist {
+    color: white;
+}
+.makeplaylist {
+    width: 25%;
+    margin-top:0%;
+}
+
+.artistsDiv {
+    margin-bottom: 0%;
+}
+
+.title {
+    font-size: 50px;
+}
+.options_buttons {
+	/*display: flex;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*.options_button {
+	margin: 5px;
+}*/
+
+.sort_option{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.caption {
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 24px;
+}
+
+
+select {
+  display: none;
+}
+
+option {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 3%;
+}
